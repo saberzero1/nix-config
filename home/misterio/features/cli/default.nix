@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   imports = [
-    ./atuin.nix
     ./bash.nix
     ./bat.nix
     ./direnv.nix
@@ -18,6 +17,7 @@
     ./ssh.nix
     ./starship.nix
     ./xpo.nix
+    ./fzf.nix
   ];
   home.packages = with pkgs; [
     comma # Install and run programs by sticking a , before them
